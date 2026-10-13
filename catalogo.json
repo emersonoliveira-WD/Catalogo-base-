@@ -1,0 +1,53 @@
+{
+  "loja": {
+    "nome": "Frente Balcão & Conveniência",
+    "telefone": "(11) 99999-9999",
+    "endereco": "Av. Principal, 1200 - Centro, São Paulo - SP"
+  },
+  "itens": [
+    {
+      "id": 1,
+      "titulo": "Chevrolet Tracker 1.0 Turbo Premier 2023",
+      "categoria": "Veículos & Autos",
+      "preco_de": 128900.00,
+      "preco_por": 119900.00,
+      "estoque_qtd": "Único Dono • 24.000 KM",
+      "imagem_url": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80",
+      "descricao": "Tracker Premier Completa: Teto solar panorâmico, alerta de colisão frontal, frenagem autônoma de emergência, bancos em couro bicolor, chave presencial e todas as revisões feitas na concessionária. Aceitamos troca na loja física!",
+      "destaque": 1
+    },
+    {
+      "id": 2,
+      "titulo": "Terreno Residencial 360m² - Condomínio Fechado",
+      "categoria": "Imóveis & Terrenos",
+      "preco_de": 185000.00,
+      "preco_por": 169000.00,
+      "estoque_qtd": "Pronto para Construir",
+      "imagem_url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
+      "descricao": "Excelente lote plano em rua alta com vista panorâmica. Infraestrutura completa: água encanada, energia elétrica, asfalto e portaria 24 horas. Financiamento direto disponível ou entrada + parcelamento.",
+      "destaque": 1
+    },
+    {
+      "id": 3,
+      "titulo": "Smart TV Samsung 55\" Crystal UHD 4K",
+      "categoria": "Eletrônicos",
+      "preco_de": 2899.00,
+      "preco_por": 2399.00,
+      "estoque_qtd": "4 unidades restantes",
+      "imagem_url": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80",
+      "descricao": "Processador Crystal 4K, tela sem bordas aparentes, Gaming Hub para jogar direto da nuvem sem console, comando de voz integrado Alexa/Bixby e 1 ano de garantia de fábrica.",
+      "destaque": 0
+    },
+    {
+      "id": 4,
+      "titulo": "Fardo Cerveja Heineken Long Neck 330ml (12 Unid)",
+      "categoria": "Promoções da Semana",
+      "preco_de": 89.90,
+      "preco_por": 69.90,
+      "estoque_qtd": "Estoque promocional na loja",
+      "imagem_url": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
+      "descricao": "Cerveja Heineken Puro Malte garrafa Long Neck 330ml original. Gelada ou em fardo fechado para retirada no balcão da loja física. Válido enquanto durarem os estoques deste lote.",
+      "destaque": 0
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Online & Ofertas</title>
+  <meta name="description" content="Confira os itens em destaque, promoções da semana, veículos e ofertas exclusivas da nossa loja física!" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Catálogo Online & Ofertas Exclusivas" />
+  <meta property="og:description" content="Confira os itens em destaque e entre em contato direto pelo WhatsApp." />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- ─── Topbar ─── -->
+  <header class="topbar">
+    <div class="topbar-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">🛍️</div>
+        <div class="brand-text">
+          <h1 id="store-name">Nossa Loja</h1>
+          <span>Catálogo & Vitrine Online</span>
+        </div>
+      </a>
+
+      <a href="#" id="header-whatsapp-btn" target="_blank" rel="noopener" class="header-contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+        </svg>
+        <span>Falar no WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ─── Banner Hero ─── -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Vitrine Física & Anúncios</div>
+      <h2>Ofertas & Oportunidades em Destaque</h2>
+      <p id="hero-subtitle">
+        Confira nossas novidades, veículos, terrenos e promoções especiais da loja física. Para tirar dúvidas ou negociar, fale direto no WhatsApp!
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── Barra de Busca e Filtros de Categoria ─── -->
+  <section class="catalog-toolbar">
+    <div class="toolbar-card">
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="O que você está procurando? Digite o produto, modelo ou terreno..."
+          autocomplete="off"
+        />
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </div>
+
+      <nav class="category-pills" id="category-pills">
+        <!-- Renderizado dinamicamente via app.js -->
+      </nav>
+    </div>
+  </section>
+
+  <!-- ─── Grid de Produtos ─── -->
+  <main class="main-content">
+    <div class="catalog-header-info">
+      <span id="total-count">Carregando anúncios...</span>
+    </div>
+
+    <section class="cards-grid" id="cards-grid">
+      <!-- Cards renderizados dinamicamente via app.js -->
+    </section>
+  </main>
+
+  <!-- ─── Modal "Ver Detalhes" ─── -->
+  <div class="modal-backdrop" id="details-modal">
+    <div class="modal-dialog">
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="Foto do Produto" class="modal-img" />
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Fechar">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <span class="modal-category" id="modal-category">Categoria</span>
+        <h3 class="modal-title" id="modal-title">Título do Produto</h3>
+
+        <div class="modal-prices" id="modal-prices">
+          <!-- Preços renderizados dinamicamente -->
+        </div>
+
+        <div class="modal-desc-box">
+          <h4>Especificações e Detalhes</h4>
+          <p id="modal-desc">Carregando descrição...</p>
+        </div>
+
+        <a href="#" id="modal-cta-btn" target="_blank" rel="noopener" class="modal-cta-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+          </svg>
+          <span>Falar no WhatsApp sobre este item</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Footer com Endereço e Google Maps ─── -->
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 id="footer-store-name">Nossa Loja</h3>
+        <p>Visite nossa loja física para conferir de perto nossos produtos, condições especiais de pagamento e atendimento exclusivo.</p>
+        
+        <div class="footer-info-item">
+          <span>📍</span>
+          <span id="footer-address">Av. Principal, 1200 - Centro</span>
+        </div>
+
+        <div class="footer-info-item">
+          <span>🕒</span>
+          <span id="footer-hours">Segunda a Sábado das 08h às 19h</span>
+        </div>
+
+        <div class="footer-info-item">
+          <span>💬</span>
+          <span>Atendimento direto pelo WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Como Chegar (Localização)</h3>
+        <p>Veja no mapa abaixo a localização exata da loja:</p>
+        <div class="footer-maps-wrap">
+          <iframe
+            id="maps-iframe"
+            src="about:blank"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da Loja no Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Frente Balcão. Vitrine e Catálogo Comercial.</p>
+      <p>Desenvolvido para máxima velocidade e performance mobile.</p>
+    </div>
+  </footer>
+
+  <!-- ─── Botão Flutuante do WhatsApp ─── -->
+  <a
+    href="#"
+    id="floating-whatsapp"
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp"
+    aria-label="Falar conosco no WhatsApp"
+    title="Falar no WhatsApp"
+  >
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.02 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/>
+    </svg>
+  </a>
+
+  <!-- Configurações e Script -->
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
